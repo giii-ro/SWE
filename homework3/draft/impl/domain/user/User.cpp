@@ -17,5 +17,5 @@ void User::removeUser() {
 }
 
 bool User::validateUser() {
-
+	return 0;
 }
