@@ -3,6 +3,7 @@
 #include <vector>
 #include "boundary/user/SignUp.h"
 #include "boundary/item/ShowClothingItemList.h"
+#include "boundary/item/SearchClothingItem.h"
 
 #pragma warning(disable:4996)
 
@@ -28,6 +29,9 @@ int main() {
 
 void doTask() {
 	int menuCmd1 = 0, menuCmd2 = 0, finish = 0;
+
+	itemList.push_back(ClothingItem());
+
 	while (!finish) {
 		in >> menuCmd1 >> menuCmd2;
 		if (menuCmd1 == 1) {
@@ -63,7 +67,7 @@ void doTask() {
 		else if (menuCmd1 == 4) {
 			if (menuCmd2 == 1) {
 				out << "4.1. 상품 정보 검색\n";
-				//SearchClothingItem::showClothingItemList();
+				SearchClothingItem::searchClothingItem();
 			}
 			else if (menuCmd2 == 2) {
 				out << "4.2. 상품 구매\n";

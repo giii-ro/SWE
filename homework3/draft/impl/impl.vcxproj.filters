@@ -33,6 +33,9 @@
     <ClCompile Include="boundary\item\ShowClothingItemList.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="boundary\item\SearchClothingItem.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
@@ -56,6 +59,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="boundary\item\ShowClothingItemList.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="boundary\item\SearchClothingItem.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
