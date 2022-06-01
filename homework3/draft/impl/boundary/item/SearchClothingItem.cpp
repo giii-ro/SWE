@@ -4,6 +4,9 @@
 
 using namespace std;
 
+/*
+	@output { sellerName, itemName, companyName, price, quantity, averageSatisfactionRating }
+*/ 
 void SearchClothingItem::searchClothingItem() {
 	string searchItemName;
 	in >> searchItemName;
@@ -12,8 +15,10 @@ void SearchClothingItem::searchClothingItem() {
 		if (itemList[i].getItemName() == searchItemName) {
 			vector<string> itemInfo = itemList[i].getItemInfo();
 
-			// { sellerName, itemName, companyName, price, quantity, averageSatisfactionRating } 
+			currentItemName = searchItemName;
+
 			out << "> " << itemInfo[0] << " " << itemInfo[1] << " " << itemInfo[2] << " " << itemInfo[3] << " " << itemInfo[4] << " " << itemInfo[5] << "\n";
+			return;
 		}
 	}
 }

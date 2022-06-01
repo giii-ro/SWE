@@ -21,7 +21,7 @@
     <ClCompile Include="domain\user\User.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="domain\item\ClothingItm.cpp">
+    <ClCompile Include="domain\item\ClothingItem.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="boundary\item\AddClothingItem.cpp">
@@ -37,6 +37,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="boundary\item\QueryPurchaseList.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="boundary\item\PurchaseItem.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -68,6 +71,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="boundary\item\QueryPurchaseList.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="boundary\item\PurchaseItem.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

@@ -5,6 +5,7 @@
 #include "boundary/item/ShowClothingItemList.h"
 #include "boundary/item/SearchClothingItem.h"
 #include "boundary/item/QueryPurchaseList.h"
+#include "boundary/item/PurchaseItem.h"
 
 #pragma warning(disable:4996)
 
@@ -15,11 +16,14 @@ using namespace std;
 
 void doTask();
 void programExit(int *flag);
+void Test_getPurchaseHistoryList();
+void Test_purchaseItem();
 
 ifstream in(INPUT_FILE_NAME);
 ofstream out(OUTPUT_FILE_NAME);
 
-string currentUserName; // ÇöÀç Á¢¼ÓÁßÀÎ °èÁ¤ ID¸¦ À¯ÁöÇÏ´Â Àü¿ªº¯¼ö -> ·Î±×ÀÎ½Ã¿¡ °ü¸®ÇÑ´Ù.
+string currentUserName; // í˜„ì¬ ì ‘ì†ì¤‘ì¸ ê³„ì • IDë¥¼ ìœ ì§€í•˜ëŠ” ì „ì—­ë³€ìˆ˜ -> ë¡œê·¸ì¸ì‹œì— ê´€ë¦¬í•œë‹¤.
+string currentItemName; // ìƒí’ˆ ì •ë³´ ê²€ìƒ‰ì—ì„œ ì¡°íšŒ ìƒí’ˆ ID -> ìƒí’ˆ ì •ë³´ ê²€ìƒ‰ì‹œì— ê´€ë¦¬í•œë‹¤.
 vector<User> userList;
 vector<ClothingItem> itemList;
 
@@ -34,57 +38,57 @@ void doTask() {
 		in >> menuCmd1 >> menuCmd2;
 		if (menuCmd1 == 1) {
 			if (menuCmd2 == 1) {
-				out << "1.1. È¸¿ø°¡ÀÔ\n";
+				out << "1.1. íšŒì›ê°€ì…\n";
 				SignUp::signUp();
 			}
 			else if (menuCmd2 == 2) {
-				out << "1.2. È¸¿øÅ»Åğ\n";
+				out << "1.2. íšŒì›íƒˆí‡´\n";
 				//Withdrawal::withDrawl();
 			}
 		}
 		else if (menuCmd1 == 2) {
 			if (menuCmd2 == 1) {
-				out << "2.1. ·Î±×ÀÎ\n";
+				out << "2.1. ë¡œê·¸ì¸\n";
 				//Login::logIn();
 			}
 			else if (menuCmd2 == 2) {
-				out << "2.2. ·Î±×¾Æ¿ô\n";
+				out << "2.2. ë¡œê·¸ì•„ì›ƒ\n";
 				//Logout::logOut();
 			}
 		}
 		else if (menuCmd1 == 3) {
 			if (menuCmd2 == 1) {
-				out << "3.1. ÆÇ¸Å ÀÇ·ù µî·Ï\n";
+				out << "3.1. íŒë§¤ ì˜ë¥˜ ë“±ë¡\n";
 				//AddClothingItem::addClothingItem();
 			}
 			else if (menuCmd2 == 2) {
-				out << "3.2. µî·Ï »óÇ° Á¶È¸\n";
+				out << "3.2. ë“±ë¡ ìƒí’ˆ ì¡°íšŒ\n";
 				ShowClothingItemList::getMyClothingList();
 			}
 		}
 		else if (menuCmd1 == 4) {
 			if (menuCmd2 == 1) {
-				out << "4.1. »óÇ° Á¤º¸ °Ë»ö\n";
+				out << "4.1. ìƒí’ˆ ì •ë³´ ê²€ìƒ‰\n";
 				SearchClothingItem::searchClothingItem();
 			}
 			else if (menuCmd2 == 2) {
-				out << "4.2. »óÇ° ±¸¸Å\n";
-				//TODO : PurchaseItem ³» ¸Ş¼­µå ¼öÁ¤ ¹× ±¸¸Å ³»¿ª ÂÊ ¼³°è º¯°æ
-				//PurchaseItem::purchaseItem();
+				out << "4.2. ìƒí’ˆ êµ¬ë§¤\n";
+				//Test_purchaseItem();
+				PurchaseItem::purchaseItem();
 			}
 			else if (menuCmd2 == 3) {
-				out << "4.3. »óÇ° ±¸¸Å ³»¿ª Á¶È¸\n";
-				// TODO : »óÇ° ±¸¸Å ±¸Çö ÈÄ, Å×½ºÆ®
+				out << "4.3. ìƒí’ˆ êµ¬ë§¤ ë‚´ì—­ ì¡°íšŒ\n";
+        //Test_getPurchaseHistoryList();
 				QueryPurchaseList::getPurchaseHistoryList();
 			}
 			else if (menuCmd2 == 4) {
-				out << "4.4. »óÇ° ±¸¸Å¸¸Á·µµ Æò°¡\n";
+				out << "4.4. ìƒí’ˆ êµ¬ë§¤ë§Œì¡±ë„ í‰ê°€\n";
 				//NewSatisfactionRating::addNewRating();
 			}
 		}
 		else if (menuCmd1 == 6) {
 			if (menuCmd2 == 1) {
-				out << "6.1. Á¾·á\n";
+				out << "6.1. ì¢…ë£Œ\n";
 				programExit(&finish);
 			}
 		}
@@ -98,8 +102,17 @@ void programExit(int *flag) {
 }
 
 void Test_getPurchaseHistoryList() {
-	currentUserName = "mbc";
-	User user = User::createUser("mbc", "ssn", "id", "pwd");
-	//user.addNewPurchaseHistory(ClothingItem());
+	currentUserName = "lee";
+	User user = User::createUser("lee", "ssn", "id", "pwd");
+	user.addNewPurchaseHistory(ClothingItem());
 	userList.push_back(user);
+}
+
+void Test_purchaseItem() {
+	currentUserName = "lee";
+	currentItemName = "mockItem";
+	User user = User::createUser("lee", "ssn", "id", "pwd");
+
+	ClothingItem targetItem = ClothingItem();
+	itemList.push_back(targetItem);
 }

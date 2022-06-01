@@ -5,6 +5,7 @@
 
 extern std::ifstream in;
 extern std::ofstream out;
+extern string currentItemName;
 extern vector<ClothingItem> itemList;
 
 class SearchClothingItem {

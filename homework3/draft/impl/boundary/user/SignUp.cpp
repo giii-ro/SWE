@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void SignUp::signUp() {\
+void SignUp::signUp() {
     string name, ssn, id, password;
     in >> name >> ssn >> id >> password;
 

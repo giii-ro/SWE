@@ -1,7 +1,7 @@
 #include "User.h"
 
-void User::addNewPurchaseHistory() {
-
+void User::addNewPurchaseHistory(ClothingItem item) {
+	this->purchaseItemList.push_back(item);
 }
 
 User User::createUser(string name, string ssn, string id, string password) {
