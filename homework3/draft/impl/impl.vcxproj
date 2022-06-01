@@ -129,7 +129,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="boundary\item\AddClothingItem.cpp" />
-    <ClCompile Include="boundary\item\ShowClothingList.cpp" />
+    <ClCompile Include="boundary\item\ShowClothingItemList.cpp" />
     <ClCompile Include="boundary\user\SignUp.cpp" />
     <ClCompile Include="domain\item\ClothingItm.cpp" />
     <ClCompile Include="domain\user\User.cpp" />
@@ -141,7 +141,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="boundary\item\AddClothingItem.h" />
-    <ClInclude Include="boundary\item\ShowClothingListh.h" />
+    <ClInclude Include="boundary\item\ShowClothingItemList.h" />
     <ClInclude Include="boundary\user\SignUp.h" />
     <ClInclude Include="domain\item\ClothingItem.h" />
     <ClInclude Include="domain\user\User.h" />

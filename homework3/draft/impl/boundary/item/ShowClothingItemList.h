@@ -1,10 +1,12 @@
+#pragma once
 #include <vector>
 #include "../domain/user/User.h"
 
+extern std::ofstream out;
 extern string currentUserName;
 extern vector<User> userList;
 
-class ShowClothingList {
+class ShowClothingItemList {
 	public: 
-		vector<ClothingItem> getMyClothingList();
+		static void getMyClothingList();
 };

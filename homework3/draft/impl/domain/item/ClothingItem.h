@@ -1,9 +1,11 @@
+#pragma once
 #include <string>
+#include <vector>
 using namespace std;
 
 class ClothingItem {
 	private: 
-		string name;
+		string itemname;
 		string sellerName; // check
 		string companyName;
 		int price;
@@ -11,5 +13,6 @@ class ClothingItem {
 		double averageSatisfactionRating;
 	public:
 		void createClothingItem();
+		vector<string> getSellingItemInfo();
 		void addNewRating();
 };

@@ -30,7 +30,7 @@
     <ClCompile Include="boundary\user\SignUp.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="boundary\item\ShowClothingList.cpp">
+    <ClCompile Include="boundary\item\ShowClothingItemList.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -55,7 +55,7 @@
     <ClInclude Include="boundary\user\SignUp.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="boundary\item\ShowClothingListh.h">
+    <ClInclude Include="boundary\item\ShowClothingItemList.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

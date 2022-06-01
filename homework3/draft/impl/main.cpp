@@ -2,6 +2,7 @@
 #include <fstream>
 #include <vector>
 #include "boundary/user/SignUp.h"
+#include "boundary/item/ShowClothingItemList.h"
 
 #pragma warning(disable:4996)
 
@@ -18,6 +19,7 @@ ofstream out(OUTPUT_FILE_NAME);
 
 string currentUserName; // 현재 접속중인 계정 ID를 유지하는 전역변수 -> 로그인시에 관리한다.
 vector<User> userList;
+vector<ClothingItem> itemList;
 
 int main() {
 	doTask();
@@ -55,7 +57,7 @@ void doTask() {
 			}
 			else if (menuCmd2 == 2) {
 				out << "3.2. 등록 상품 조회\n";
-				//ShowClothingItemList::showClothingItemList();
+				ShowClothingItemList::getMyClothingList();
 			}
 		}
 		else if (menuCmd1 == 4) {
