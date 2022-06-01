@@ -1,7 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include "Withdrawal.h"
-#include <user/SignUp.h>
 
 using namespace std;
 
