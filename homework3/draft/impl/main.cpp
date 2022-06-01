@@ -5,6 +5,7 @@
 #include "boundary/item/ShowClothingItemList.h"
 #include "boundary/item/SearchClothingItem.h"
 #include "boundary/item/QueryPurchaseList.h"
+#include "boundary/item/PurchaseItem.h"
 
 #pragma warning(disable:4996)
 
@@ -15,11 +16,14 @@ using namespace std;
 
 void doTask();
 void programExit(int *flag);
+void Test_getPurchaseHistoryList();
+void Test_purchaseItem();
 
 ifstream in(INPUT_FILE_NAME);
 ofstream out(OUTPUT_FILE_NAME);
 
 string currentUserName; // 현재 접속중인 계정 ID를 유지하는 전역변수 -> 로그인시에 관리한다.
+string currentItemName; // 상품 정보 검색에서 조회 상품 ID -> 상품 정보 검색시에 관리한다.
 vector<User> userList;
 vector<ClothingItem> itemList;
 
@@ -69,12 +73,12 @@ void doTask() {
 			}
 			else if (menuCmd2 == 2) {
 				out << "4.2. 상품 구매\n";
-				//TODO : PurchaseItem 내 메서드 수정 및 구매 내역 쪽 설계 변경
-				//PurchaseItem::purchaseItem();
+				//Test_purchaseItem();
+				PurchaseItem::purchaseItem();
 			}
 			else if (menuCmd2 == 3) {
 				out << "4.3. 상품 구매 내역 조회\n";
-				// TODO : 상품 구매 구현 후, 테스트
+				//Test_getPurchaseHistoryList();
 				QueryPurchaseList::getPurchaseHistoryList();
 			}
 			else if (menuCmd2 == 4) {
@@ -98,8 +102,17 @@ void programExit(int *flag) {
 }
 
 void Test_getPurchaseHistoryList() {
-	currentUserName = "mbc";
-	User user = User::createUser("mbc", "ssn", "id", "pwd");
-	//user.addNewPurchaseHistory(ClothingItem());
+	currentUserName = "lee";
+	User user = User::createUser("lee", "ssn", "id", "pwd");
+	user.addNewPurchaseHistory(ClothingItem());
 	userList.push_back(user);
+}
+
+void Test_purchaseItem() {
+	currentUserName = "lee";
+	currentItemName = "mockItem";
+	User user = User::createUser("lee", "ssn", "id", "pwd");
+
+	ClothingItem targetItem = ClothingItem();
+	itemList.push_back(targetItem);
 }

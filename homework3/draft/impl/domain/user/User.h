@@ -26,6 +26,6 @@ class User {
         void removeUser(); // userList 클래스 메서드인듯함.. 
         bool validateUser();
         void logoutUser();
-        void addNewPurchaseHistory();
+        void addNewPurchaseHistory(ClothingItem item);
         string getName();
 };

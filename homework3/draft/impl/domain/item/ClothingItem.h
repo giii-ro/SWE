@@ -5,7 +5,7 @@ using namespace std;
 
 class ClothingItem {
 	private: 
-		string itemname;
+		string itemName;
 		string sellerName; // check
 		string companyName;
 		int price;
@@ -13,16 +13,18 @@ class ClothingItem {
 		double averageSatisfactionRating;
 	public:
 		ClothingItem() {
-			this->itemname = "mockItem";
+			this->itemName = "mockItem";
 			this->sellerName = "mockSeller";
 			this->companyName = "mockCompany";
 			this->price = 123;
-			this->quantity = 1;
+			this->quantity = 5;
 			this->averageSatisfactionRating = 5.5;
 		}
 		void createClothingItem();
 		void addNewRating();
+		void decreaseQuantity();
 		string getItemName();
 		vector<string> getSellingItemInfo();
+		vector<string> getPurchaseItemInfo();
 		vector<string> getItemInfo();
 };
