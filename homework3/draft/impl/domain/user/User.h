@@ -24,7 +24,6 @@ class User {
         vector<ClothingItem> getPurchaseClothingItemList();
         static User createUser(string name, string ssn, string id, string password);
         static void removeUser(string id);
-        bool validateUser(string password);
         static bool loginUser(string id, string password);
         static string logoutUser();
         void addNewPurchaseHistory(ClothingItem item);

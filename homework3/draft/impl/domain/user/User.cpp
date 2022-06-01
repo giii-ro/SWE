@@ -20,7 +20,7 @@ bool User::loginUser(string id, string password) {
 	vector<User>::iterator it = find(userList.begin(), userList.end(), id);
 
 	if (it != userList.end()) {
-		if (it->validateUser(password)) {
+		if (it->password == password) {
 			currentUserName = it->name;
 
 			return true;
@@ -50,14 +50,6 @@ void User::removeUser(string id) {
 	if (it != userList.end()) {
 		userList.erase(it);
 	}
-}
-
-bool User::validateUser(string password) {
-	if (this->password == password) {
-		return true;
-	}
-
-	return false;
 }
 
 vector<ClothingItem> User::getSellingClothingItemList() {
