@@ -10,5 +10,5 @@ void Login::login() {
     
     bool result = User::loginUser(id, password);
 
-    out << "> " << id << " " << password << "\n";
+    out << "> " << id << " " << password << "\n\n";
 }

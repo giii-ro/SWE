@@ -17,7 +17,7 @@ void SearchClothingItem::searchClothingItem() {
 
 			currentItemName = searchItemName;
 
-			out << "> " << itemInfo[0] << " " << itemInfo[1] << " " << itemInfo[2] << " " << itemInfo[3] << " " << itemInfo[4] << " " << itemInfo[5] << "\n";
+			out << "> " << itemInfo[0] << " " << itemInfo[1] << " " << itemInfo[2] << " " << itemInfo[3] << " " << itemInfo[4] << " " << itemInfo[5] << "\n\n";
 			return;
 		}
 	}

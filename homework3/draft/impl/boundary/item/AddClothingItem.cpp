@@ -20,5 +20,5 @@ void AddClothingItem::addNewClothingItem() {
 
     ClothingItem::createClothingItem(itemName, companyName, price, quantity);
 
-    out << "> " << itemName << " " << companyName << " " << priceStr << " " << quantityStr << "\n";
+    out << "> " << itemName << " " << companyName << " " << priceStr << " " << quantityStr << "\n\n";
 }

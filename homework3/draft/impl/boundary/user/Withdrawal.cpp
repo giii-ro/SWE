@@ -10,5 +10,5 @@ void Withdrawal::withdrawal() {
 
     User::removeUser(id);
 
-    out << "> " << id << "\n";
+    out << "> " << id << "\n\n";
 }

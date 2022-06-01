@@ -10,5 +10,5 @@ void SignUp::signUp() {
 
     userList.push_back(User::createUser(name, ssn, id, password));
 
-    out << "> " << name << " " << ssn << " " << id << " " << password << "\n";
+    out << "> " << name << " " << ssn << " " << id << " " << password << "\n\n";
 }

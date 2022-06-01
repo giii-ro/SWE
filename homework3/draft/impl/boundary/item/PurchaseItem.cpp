@@ -21,7 +21,7 @@ void PurchaseItem::purchaseItem() {
 			}
 
 			vector<string> purchaseItemInfo = itemList[i].getPurchaseItemInfo();
-			out << "> " << purchaseItemInfo[0] << " " << purchaseItemInfo[1] << "\n";
+			out << "> " << purchaseItemInfo[0] << " " << purchaseItemInfo[1] << "\n\n";
 			return;
 		}
 	}

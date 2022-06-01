@@ -7,5 +7,5 @@ using namespace std;
 void Logout::logout() {
     string id = User::logoutUser();
 
-    out << "> " << id << "\n";
+    out << "> " << id << "\n\n";
 }

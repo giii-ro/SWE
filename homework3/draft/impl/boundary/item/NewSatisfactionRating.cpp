@@ -12,7 +12,7 @@ void NewSatisfactionRating::addNewRating() {
 		if (itemList[i].getItemName() == currentItemName) {
 			itemList[i].addNewRating(rating);
 			vector<string> purchaseRatingInfo = itemList[i].getPurchaseRatingInfo(rating);
-			out << "> " << purchaseRatingInfo[0] << " " << purchaseRatingInfo[1] << " " << purchaseRatingInfo[2] << "\n";
+			out << "> " << purchaseRatingInfo[0] << " " << purchaseRatingInfo[1] << " " << purchaseRatingInfo[2] << "\n\n";
 			return;
 		}
 	}
