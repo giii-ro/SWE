@@ -1,0 +1,74 @@
+[giii-ro] Thu Jun 2 01:24:32 2022 +0900 [feat] 최종보고서 추 131845c
+[Shim MunSeong] Thu Jun 2 01:06:14 2022 +0900 Merge branch 'main' of https://github.com/giii-ro/SWE f876435
+[Shim MunSeong] Thu Jun 2 01:06:08 2022 +0900 [chore] 다이어그램 수정 및 드래프트 디렉토리 정리 64a5a76
+[Shim MunSeong] Thu Jun 2 00:36:17 2022 +0900 [refactor] call by reference로 로직 수정 eddc3b8
+[Shim MunSeong] Thu Jun 2 00:02:07 2022 +0900 [refactor] searchClothingItem 메소드 추가 및 리팩토링 0b8f5f7
+[Shim MunSeong] Wed Jun 1 23:42:29 2022 +0900 [fix] validateUser 삭제 7cfc40f
+[Shim MunSeong] Wed Jun 1 23:30:07 2022 +0900 [fix] 파일 출력 시 개행 문자 추가 db926d4
+[Shim MunSeong] Wed Jun 1 23:27:31 2022 +0900 [fix] 상품 정보에 판매자의 아이디가 저장되도록 수정 794db95
+[Shim MunSeong] Wed Jun 1 23:18:28 2022 +0900 [fix] 평균 구매만족도 계산 로직 변경 cea0a45
+[Shim MunSeong] Wed Jun 1 23:03:33 2022 +0900 [fix] 상품의 최초 구매만족도가 0이 되도록 수정 313ff46
+[Shim MunSeong] Wed Jun 1 22:44:29 2022 +0900 [refactor] auto keyword 삭제 ede26ab
+[Shim MunSeong] Wed Jun 1 22:39:34 2022 +0900 [fix] 브랜치 머지 후 파일 충결 해결 2174011
+[Shim MunSeong] Wed Jun 1 22:27:25 2022 +0900 Merge branch 'hw3/puterism' 18bcd72
+[giii-ro] Wed Jun 1 21:16:18 2022 +0900 [feat] 구매만족도 평가 기능 추가 c78cd0d
+[giro] Wed Jun 1 20:30:32 2022 +0900 [feat] 상품 구매 기능 추가 (#2) 50e0274
+[Shim MunSeong] Wed Jun 1 18:33:57 2022 +0900 [feat] 상품 등록 기능 구현 155139d
+[giro] Wed Jun 1 18:09:53 2022 +0900 [feat] 상품 구매내역 조회 추가 530a8b3
+[Shim MunSeong] Wed Jun 1 18:05:40 2022 +0900 [feat] 로그아웃 기능 구현 56d4c97
+[Shim MunSeong] Wed Jun 1 18:05:12 2022 +0900 [feat] 로그인 기능 구현 f0e12da
+[Shim MunSeong] Wed Jun 1 18:03:54 2022 +0900 [fix] Withdrawal.cpp의 잘못된 헤더 참조 수정 435c0b4
+[Shim MunSeong] Wed Jun 1 18:03:33 2022 +0900 [feat] 회원탈퇴 기능 구현 c4ab03a
+[giii-ro] Wed Jun 1 15:52:21 2022 +0900 [feat] 상품 정보 검색 추가 9e41a2e
+[giii-ro] Wed Jun 1 15:06:29 2022 +0900 [refactor] 클래스명 수정 & 변수명 수정 c28a791
+[giii-ro] Wed Jun 1 13:57:20 2022 +0900 [feat] 판매 상품 조회 기능 추가 83b9ed4
+[giii-ro] Wed Jun 1 03:22:51 2022 +0900 [feat] 프로젝트 재세팅 & 토대 코드 재작성 8c2a475
+[giii-ro] Mon May 30 00:22:42 2022 +0900 [feat] 코드 정리 및 예시용 참고 코드(회원) 작성 34347d3
+[giii-ro] Sun May 29 22:05:59 2022 +0900 [feat] hw3 디렉토리 구조 추가 & 토대 코드 추가 3f7a4bd
+[giii-ro] Thu May 19 00:59:25 2022 +0900 [chore] 로그파일 위치 변경 b408934
+[giii-ro] Thu May 19 00:52:14 2022 +0900 [feat] 과제 제출용 log_output 추가 3d75b84
+[giii-ro] Thu May 19 00:50:26 2022 +0900 [feat] 최종보고서 추가 ed4b296
+[Shim MunSeong] Thu May 19 00:42:42 2022 +0900 [feat] UML 취합 2880e35
+[Shim MunSeong] Wed May 18 23:19:22 2022 +0900 Merge branch 'main' of https://github.com/giii-ro/SWE e046c82
+[Shim MunSeong] Wed May 18 23:18:52 2022 +0900 [feat] 클래스 다이어그램 작성 9a3113f
+[giii-ro] Wed May 18 23:09:58 2022 +0900 [feat] Description 추가 1f3afe0
+[giii-ro] Wed May 18 22:11:49 2022 +0900 [feat] requirementList 조합 & 이미지파일 추가 9be48b6
+[Shim MunSeong] Wed May 18 21:35:13 2022 +0900 Merge branch 'main' of https://github.com/giii-ro/SWE abbfba3
+[giii-ro] Wed May 18 21:29:33 2022 +0900 [fix] 엔티티 내 attribute 수정 a0dda8c
+[giii-ro] Wed May 18 21:18:52 2022 +0900 [feat] ClassDiagram 추가 93c1afd
+[giii-ro] Wed May 18 20:09:59 2022 +0900 [chore] 파일 위치 변경 d8fbc8b
+[giii-ro] Wed May 18 20:07:44 2022 +0900 [chore] mdj파일 삭제 aa4d401
+[giii-ro] Wed May 18 20:05:45 2022 +0900 [feat] 로그인/로그아웃 Sequence Diagram 추가 0f4c9b3
+[giii-ro] Wed May 18 19:44:02 2022 +0900 [feat] 회원탈퇴 Sequence Diagram 추가 1a1bc19
+[giii-ro] Wed May 18 19:17:47 2022 +0900 [feat] 회원가입 Sequence Diagram 추가 ea1455e
+[giii-ro] Wed May 18 09:59:57 2022 +0900 [no-issue] pdf누락 수정 d4c6580
+[giii-ro] Wed May 18 09:53:23 2022 +0900 [feat] 회원 Usecase Description 추가 84912b0
+[giii-ro] Wed May 18 09:38:46 2022 +0900 [feat] 회원 Usecase Diagram 추가 fc11aaa
+[Shim MunSeong] Wed May 18 02:31:54 2022 +0900 [feat] 상품 관련 커뮤니케이션 다이얼로그 작성 1efe1c6
+[Shim MunSeong] Tue May 17 22:39:13 2022 +0900 [feat] 상품 관련 유즈 케이스 디스크립션 작성 ec68a9e
+[Shim MunSeong] Tue May 17 22:02:55 2022 +0900 [feat] 상품 관련 유즈 케이스 다이어그램 작성 279f6b9
+[Shim MunSeong] Tue May 17 22:02:42 2022 +0900 [feat] 상품 관련 유즈 케이스에 대해 Requirement list 작성 e74b44b
+[giii-ro] Tue May 17 18:33:43 2022 +0900 [feat] 회원기능 requirement 추가 ed47709
+[giii-ro] Sun May 15 14:51:24 2022 +0900 [chore] hw2 디렉토리 구조 추가 f0198d2
+[Shim MunSeong] Sun May 1 23:37:13 2022 +0900 [feat] 과제 제출용 log_output.txt 추가 f82cbf8
+[Shim MunSeong] Sun May 1 23:36:02 2022 +0900 [chore] 보고서 폰트 변경 a18b4e6
+[Shim MunSeong] Sun May 1 23:33:27 2022 +0900 [docs] UI screen design & Use Case descriptions 작성 b04f73c
+[Shim MunSeong] Sun May 1 20:43:41 2022 +0900 [docs] Use Case Diagram 추가 dacd8a5
+[giro] Sun May 1 20:32:52 2022 +0900 [docs] 보고서 문서 수정 - 요구사항 추가, 액터 decription 추가 1cca525
+[Shim MunSeong] Sun May 1 20:06:47 2022 +0900 [docs] 보고서 문서 생성 & 작업 방식 및 역할 분담 서술 bcb1472
+[Shim MunSeong] Sun May 1 20:06:18 2022 +0900 [chore] 디렉토리 구조 변경 1b2233f
+[Shim MunSeong] Sun May 1 19:50:00 2022 +0900 Merge branch 'puterism' 91efb3c
+[Shim MunSeong] Sun May 1 19:00:36 2022 +0900 [feat] UI 설계 9ac090b
+[Shim MunSeong] Sun May 1 18:33:48 2022 +0900 [docs] 요구사항 정의 수정 60b817b
+[Shim MunSeong] Sun May 1 18:08:21 2022 +0900 [feat] Use Case Diagram 작성 807044b
+[Shim MunSeong] Sun May 1 16:59:38 2022 +0900 [feat| 액터 디스크립션 작성 09d4405
+[Shim MunSeong] Sun May 1 16:42:05 2022 +0900 [docs] 요구사항 정의 수정 e9079c8
+[giro] Sun May 1 16:16:22 2022 +0900 [docs] 누락내용 추가 9cb143d
+[giro] Sun May 1 16:15:04 2022 +0900 [feat] UseCaseDescription 추가 d73df85
+[Shim MunSeong] Sun May 1 16:12:26 2022 +0900 [feat] 요구사항 정의 3cbba7a
+[giro] Sun May 1 02:33:02 2022 +0900 [feat] UI설계 1dbe70a
+[giro] Sun May 1 01:03:30 2022 +0900 [feat] Usecase 다이어그램 추가 2285b1b
+[giro] Sat Apr 30 23:29:35 2022 +0900 [docs] Actor event 수정 dd8815a
+[giro] Sat Apr 30 18:22:24 2022 +0900 [feat] 누락파일 추가 8e8ad36
+[giro] Sat Apr 30 18:16:32 2022 +0900 [feat] 요구사항 정의 및 액터 정의 추가 eead4bb
+[giro] Sat Apr 23 14:34:41 2022 +0900 Initial commit e517350
