@@ -1,5 +1,4 @@
 #include <algorithm>
-#include <iostream>
 #include "User.h"
 
 extern string currentUserName;

@@ -20,7 +20,15 @@ class ClothingItem {
 			this->quantity = 1;
 			this->averageSatisfactionRating = 5.5;
 		}
-		void createClothingItem();
+		ClothingItem(string itemName, string sellerName, string companyName, int price, int quantity) {
+			this->itemname = itemName;
+			this->sellerName = sellerName;
+			this->companyName = companyName;
+			this->price = price;
+			this->quantity = quantity;
+			this->averageSatisfactionRating = 5.5;
+		}
+		static void createClothingItem(string itemName, string companyName, int price, int quantity);
 		void addNewRating();
 		string getItemName();
 		vector<string> getSellingItemInfo();

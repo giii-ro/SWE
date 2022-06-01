@@ -7,6 +7,7 @@
 #include "boundary/user/Logout.h"
 #include "boundary/item/ShowClothingItemList.h"
 #include "boundary/item/SearchClothingItem.h"
+#include "boundary/item/AddClothingItem.h"
 
 #pragma warning(disable:4996)
 
@@ -60,7 +61,7 @@ void doTask() {
 		else if (menuCmd1 == 3) {
 			if (menuCmd2 == 1) {
 				out << "3.1. 판매 의류 등록\n";
-				//AddClothingItem::addClothingItem();
+				AddClothingItem::addNewClothingItem();
 			}
 			else if (menuCmd2 == 2) {
 				out << "3.2. 등록 상품 조회\n";
