@@ -28,6 +28,7 @@ class User {
         static bool loginUser(string id, string password);
         static string logoutUser();
         void addNewPurchaseHistory(ClothingItem item);
+        void addSellingList(ClothingItem item);
         string getName();
 
         bool operator==(const string id);

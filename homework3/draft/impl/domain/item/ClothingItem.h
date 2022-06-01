@@ -12,21 +12,13 @@ class ClothingItem {
 		int quantity;
 		double averageSatisfactionRating;
 	public:
-		ClothingItem() {
-			this->itemName = "mockItem";
-			this->sellerName = "mockSeller";
-			this->companyName = "mockCompany";
-			this->price = 123;
-			this->quantity = 5;
-			this->averageSatisfactionRating = 5.5;
-		}
 		ClothingItem(string itemName, string sellerName, string companyName, int price, int quantity) {
 			this->itemName = itemName;
 			this->sellerName = sellerName;
 			this->companyName = companyName;
 			this->price = price;
 			this->quantity = quantity;
-			this->averageSatisfactionRating = 5.5;
+			this->averageSatisfactionRating = 0;
 		}
 		static void createClothingItem(string itemName, string companyName, int price, int quantity);
 		void addNewRating();

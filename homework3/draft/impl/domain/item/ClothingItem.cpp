@@ -1,10 +1,18 @@
 #include "ClothingItem.h"
+#include "../domain/user/User.h"
 
+extern vector<User> userList;
 extern vector<ClothingItem> itemList;
 extern string currentUserName;
 
 void ClothingItem::createClothingItem(string itemName, string companyName, int price, int quantity) {
 	ClothingItem item = ClothingItem(itemName, currentUserName, companyName, price, quantity);
+
+	for (int i = 0; i < userList.size(); i++) {
+		if (userList[i].getName() == currentUserName) {
+			userList[i].addSellingList(item);
+		}
+	}
 
 	itemList.push_back(item);
 }
