@@ -5,7 +5,7 @@
 using namespace std;
 
 /*
-	@output { sellerName, itemName, companyName, price, quantity, sumSatisfactionRating }
+	@output { sellerId, itemName, companyName, price, quantity, sumSatisfactionRating }
 */ 
 void QueryPurchaseList::getPurchaseHistoryList() {
 	for (int i = 0; i < userList.size(); i++) {

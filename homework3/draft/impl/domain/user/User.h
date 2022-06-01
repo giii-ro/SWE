@@ -30,6 +30,7 @@ class User {
         void addNewPurchaseHistory(ClothingItem item);
         void addSellingList(ClothingItem item);
         string getName();
+        string getId();
 
         bool operator==(const string id);
 };

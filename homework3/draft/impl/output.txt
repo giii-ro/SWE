@@ -13,13 +13,13 @@
 2.1. 로그인
 > obs pwd2
 4.1. 상품 정보 검색
-> lee hat chulsoo 2000 1 0.000000
+> mbc hat chulsoo 2000 1 0.000000
 4.2. 상품 구매
-> lee hat
+> mbc hat
 4.3. 상품 구매 내역 조회
-> lee hat chulsoo 2000 0 0.000000
+> mbc hat chulsoo 2000 0 0.000000
 4.4. 상품 구매만족도 평가
-> lee hat 3
+> mbc hat 3
 2.2. 로그아웃
 > obs
 6.1. 종료

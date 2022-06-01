@@ -6,16 +6,16 @@ using namespace std;
 class ClothingItem {
 	private: 
 		string itemName;
-		string sellerName; // check
+		string sellerId; // check
 		string companyName;
 		int price;
 		int quantity;
 		double sumSatisfactionRating;
 		int ratingCount;
 	public:
-		ClothingItem(string itemName, string sellerName, string companyName, int price, int quantity) {
+		ClothingItem(string itemName, string sellerId, string companyName, int price, int quantity) {
 			this->itemName = itemName;
-			this->sellerName = sellerName;
+			this->sellerId = sellerId;
 			this->companyName = companyName;
 			this->price = price;
 			this->quantity = quantity;

@@ -71,4 +71,8 @@ string User::getName() {
 	return this->name;
 }
 
+string User::getId() {
+	return this->id;
+}
+
 bool User::operator==(const string id) { return this->id == id; }
