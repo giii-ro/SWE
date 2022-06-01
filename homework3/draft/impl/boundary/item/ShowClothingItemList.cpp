@@ -7,7 +7,7 @@ using namespace std;
 void ShowClothingItemList::getMyClothingList() {
 	for (int i = 0; i < userList.size(); i++) {
 		if (userList[i].getName() == currentUserName) {
-			vector<ClothingItem> itemList = userList[i].getClothingItemList();
+			vector<ClothingItem> itemList = userList[i].getSellingClothingItemList();
 
 			for (int j = 0; j < itemList.size(); j++) {
 				vector<string> sellingItemInfo = itemList[j].getSellingItemInfo();
