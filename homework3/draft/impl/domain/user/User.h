@@ -22,8 +22,9 @@ class User {
         }
         vector<ClothingItem> getClothingItemList();
         static User createUser(string name, string ssn, string id, string password);
-        static void removeUser(string id); // userList 클래스 메서드인듯함.. 
-        bool validateUser();
+        static void removeUser(string id);
+        bool validateUser(string password);
+        static bool loginUser(string id, string password);
         void logoutUser();
         void addNewPurchaseHistory();
         string getName();

@@ -12,6 +12,20 @@ User User::createUser(string name, string ssn, string id, string password) {
 	return User(name, ssn, id, password);
 }
 
+bool User::loginUser(string id, string password) {
+	auto it = find(userList.begin(), userList.end(), id);
+
+	if (it != userList.end()) {
+		if (it->validateUser(password)) {
+			currentUserName = it->name;
+
+			return true;
+		}
+	}
+
+	return false;
+}
+
 void User::logoutUser() {
 
 }
@@ -24,8 +38,12 @@ void User::removeUser(string id) {
 	}
 }
 
-bool User::validateUser() {
-	return 0;
+bool User::validateUser(string password) {
+	if (this->password == password) {
+		return true;
+	}
+
+	return false;
 }
 
 vector<ClothingItem> User::getClothingItemList() {

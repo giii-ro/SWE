@@ -3,6 +3,7 @@
 #include <vector>
 #include "boundary/user/SignUp.h"
 #include "boundary/user/Withdrawal.h"
+#include "boundary/user/Login.h"
 #include "boundary/item/ShowClothingItemList.h"
 #include "boundary/item/SearchClothingItem.h"
 
@@ -48,7 +49,7 @@ void doTask() {
 		else if (menuCmd1 == 2) {
 			if (menuCmd2 == 1) {
 				out << "2.1. 로그인\n";
-				//Login::logIn();
+				Login::login();
 			}
 			else if (menuCmd2 == 2) {
 				out << "2.2. 로그아웃\n";
