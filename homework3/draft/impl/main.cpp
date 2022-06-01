@@ -29,9 +29,6 @@ int main() {
 
 void doTask() {
 	int menuCmd1 = 0, menuCmd2 = 0, finish = 0;
-
-	itemList.push_back(ClothingItem());
-
 	while (!finish) {
 		in >> menuCmd1 >> menuCmd2;
 		if (menuCmd1 == 1) {

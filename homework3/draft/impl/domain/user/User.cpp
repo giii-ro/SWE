@@ -20,8 +20,11 @@ bool User::validateUser() {
 	return 0;
 }
 
-vector<ClothingItem> User::getClothingItemList() {
+vector<ClothingItem> User::getSellingClothingItemList() {
 	return this->sellingItemList;
+}
+vector<ClothingItem> User::getPurchaseClothingItemList() {
+	return this->purchaseItemList;
 }
 
 string User::getName() {
