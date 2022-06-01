@@ -36,6 +36,9 @@
     <ClCompile Include="boundary\item\SearchClothingItem.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="boundary\user\Withdrawal.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
@@ -62,6 +65,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="boundary\item\SearchClothingItem.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="boundary\user\Withdrawal.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

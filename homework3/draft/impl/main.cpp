@@ -2,6 +2,7 @@
 #include <fstream>
 #include <vector>
 #include "boundary/user/SignUp.h"
+#include "boundary/user/Withdrawal.h"
 #include "boundary/item/ShowClothingItemList.h"
 #include "boundary/item/SearchClothingItem.h"
 
@@ -41,7 +42,7 @@ void doTask() {
 			}
 			else if (menuCmd2 == 2) {
 				out << "1.2. È¸¿øÅ»Åð\n";
-				//Withdrawal::withDrawl();
+				Withdrawal::withdrawal();
 			}
 		}
 		else if (menuCmd1 == 2) {

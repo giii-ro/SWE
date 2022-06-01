@@ -132,6 +132,7 @@
     <ClCompile Include="boundary\item\SearchClothingItem.cpp" />
     <ClCompile Include="boundary\item\ShowClothingItemList.cpp" />
     <ClCompile Include="boundary\user\SignUp.cpp" />
+    <ClCompile Include="boundary\user\Withdrawal.cpp" />
     <ClCompile Include="domain\item\ClothingItm.cpp" />
     <ClCompile Include="domain\user\User.cpp" />
     <ClCompile Include="main.cpp" />
@@ -145,6 +146,7 @@
     <ClInclude Include="boundary\item\SearchClothingItem.h" />
     <ClInclude Include="boundary\item\ShowClothingItemList.h" />
     <ClInclude Include="boundary\user\SignUp.h" />
+    <ClInclude Include="boundary\user\Withdrawal.h" />
     <ClInclude Include="domain\item\ClothingItem.h" />
     <ClInclude Include="domain\user\User.h" />
   </ItemGroup>
