@@ -45,6 +45,15 @@
     <ClCompile Include="boundary\item\NewSatisfactionRating.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="boundary\user\Withdrawal.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="boundary\user\Login.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="boundary\user\Logout.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
@@ -80,6 +89,15 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="boundary\item\NewSatisfactionRating.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="boundary\user\Withdrawal.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="boundary\user\Login.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="boundary\user\Logout.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
