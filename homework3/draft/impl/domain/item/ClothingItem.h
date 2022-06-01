@@ -23,6 +23,7 @@ class ClothingItem {
 			this->ratingCount = 0;
 		}
 		static void createClothingItem(string itemName, string companyName, int price, int quantity);
+		static ClothingItem searchClothingItem(string itemName);
 		void addNewRating();
 		void createClothingItem();
 		void addNewRating(int rating);
