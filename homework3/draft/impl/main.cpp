@@ -4,6 +4,7 @@
 #include "boundary/user/SignUp.h"
 #include "boundary/user/Withdrawal.h"
 #include "boundary/user/Login.h"
+#include "boundary/user/Logout.h"
 #include "boundary/item/ShowClothingItemList.h"
 #include "boundary/item/SearchClothingItem.h"
 
@@ -53,7 +54,7 @@ void doTask() {
 			}
 			else if (menuCmd2 == 2) {
 				out << "2.2. ·Î±×¾Æ¿ô\n";
-				//Logout::logOut();
+				Logout::logout();
 			}
 		}
 		else if (menuCmd1 == 3) {

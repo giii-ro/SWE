@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <iostream>
 #include "User.h"
 
 extern string currentUserName;
@@ -26,7 +27,17 @@ bool User::loginUser(string id, string password) {
 	return false;
 }
 
-void User::logoutUser() {
+string User::logoutUser() {
+	for (User user: userList) {
+		if (currentUserName == user.name) {
+			currentUserName = "";
+
+			return user.id;
+		}
+	}
+
+	currentUserName = "";
+	return "";
 
 }
 

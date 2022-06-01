@@ -25,7 +25,7 @@ class User {
         static void removeUser(string id);
         bool validateUser(string password);
         static bool loginUser(string id, string password);
-        void logoutUser();
+        static string logoutUser();
         void addNewPurchaseHistory();
         string getName();
 
