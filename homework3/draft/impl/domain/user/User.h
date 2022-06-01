@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include "../item/ClothingItem.h"
 
 using namespace std;
 
@@ -9,6 +10,8 @@ class User {
         string ssn;
         string id;
         string password;
+        vector<ClothingItem> sellingItemList; 
+        //vector<PurchaseHistory> purchaseHistoryList 
     public:
         User(string name, string ssn, string id, string password) {
             this->name = name;
@@ -16,13 +19,11 @@ class User {
             this->id = id;
             this->password = password;
         }
-        vector<string> getUserInfo() {
-            return { name, ssn, id, password };
-        }
-//        vector<ClothingItem> getClothingItemList();
-        void addNewPurchaseHistory();
-        void createUser();
-        void removeUser();
+        vector<ClothingItem> getClothingItemList();
+        static User createUser(string name, string ssn, string id, string password);
+        void removeUser(); // userList 클래스 메서드인듯함.. 
         bool validateUser();
         void logoutUser();
+        void addNewPurchaseHistory();
+        string getName();
 };

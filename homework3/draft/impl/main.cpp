@@ -11,11 +11,12 @@ using namespace std;
 #define OUTPUT_FILE_NAME "output.txt"
 
 void doTask();
-void programExit();
+void programExit(int *flag);
 
 ifstream in(INPUT_FILE_NAME);
 ofstream out(OUTPUT_FILE_NAME);
 
+string currentUserName; // 현재 접속중인 계정 ID를 유지하는 전역변수 -> 로그인시에 관리한다.
 vector<User> userList;
 
 int main() {
@@ -24,8 +25,8 @@ int main() {
 }
 
 void doTask() {
-	int menuCmd1 = 0, menuCmd2 = 0, exitFlag = 0;
-	while (!exitFlag) {
+	int menuCmd1 = 0, menuCmd2 = 0, finish = 0;
+	while (!finish) {
 		in >> menuCmd1 >> menuCmd2;
 		if (menuCmd1 == 1) {
 			if (menuCmd2 == 1) {
@@ -79,15 +80,14 @@ void doTask() {
 		else if (menuCmd1 == 6) {
 			if (menuCmd2 == 1) {
 				out << "6.1. 종료\n";
-				programExit();
-				exitFlag = 1;
+				programExit(&finish);
 			}
 		}
 	}
 }
 
-void programExit() {
+void programExit(int *flag) {
 	in.close();
 	out.close();
-	exit(0);
+	*flag = 1;
 }

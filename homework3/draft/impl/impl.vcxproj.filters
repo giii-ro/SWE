@@ -18,15 +18,44 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="data\UserList.h">
-      <Filter>헤더 파일</Filter>
+    <ClCompile Include="domain\user\User.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="domain\item\ClothingItm.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="boundary\item\AddClothingItem.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="boundary\user\SignUp.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="boundary\item\ShowClothingList.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <Text Include="input.txt">
+      <Filter>소스 파일</Filter>
+    </Text>
+    <Text Include="output.txt">
+      <Filter>소스 파일</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="domain\item\ClothingItem.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="domain\user\User.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="boundary\item\AddClothingItem.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
     <ClInclude Include="boundary\user\SignUp.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="boundary\item\ShowClothingListh.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

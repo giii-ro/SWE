@@ -1,5 +1,5 @@
 1.1. 회원가입
-> 1234123 1231412311 123123 asdasd
+> lee 123456 mbc pwd1
 1.1. 회원가입
-> kim 123 asd asdasd
+> kim 99 ab giro
 6.1. 종료

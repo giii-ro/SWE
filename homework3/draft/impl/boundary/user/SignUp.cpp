@@ -8,9 +8,7 @@ void SignUp::signUp() {\
     string name, ssn, id, password;
     in >> name >> ssn >> id >> password;
 
-    cout << " name = " << name << " ssn = " << ssn << " id = " << id << " pwd = " << password << endl;
-    //UserList* userList = UserList::getInstance();
-    userList.push_back(User(name, ssn, id, password));
+    userList.push_back(User::createUser(name, ssn, id, password));
 
     out << "> " << name << " " << ssn << " " << id << " " << password << "\n";
 }
