@@ -13,7 +13,7 @@ User User::createUser(string name, string ssn, string id, string password) {
 }
 
 bool User::loginUser(string id, string password) {
-	auto it = find(userList.begin(), userList.end(), id);
+	vector<User>::iterator it = find(userList.begin(), userList.end(), id);
 
 	if (it != userList.end()) {
 		if (it->validateUser(password)) {
