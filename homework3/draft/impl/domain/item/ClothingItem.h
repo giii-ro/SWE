@@ -21,7 +21,7 @@ class ClothingItem {
 			this->averageSatisfactionRating = 5.5;
 		}
 		ClothingItem(string itemName, string sellerName, string companyName, int price, int quantity) {
-			this->itemname = itemName;
+			this->itemName = itemName;
 			this->sellerName = sellerName;
 			this->companyName = companyName;
 			this->price = price;

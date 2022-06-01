@@ -1,8 +1,14 @@
 #include "ClothingItem.h"
 
-void ClothingItem::createClothingItem() {
+extern vector<ClothingItem> itemList;
+extern string currentUserName;
 
+void ClothingItem::createClothingItem(string itemName, string companyName, int price, int quantity) {
+	ClothingItem item = ClothingItem(itemName, currentUserName, companyName, price, quantity);
+
+	itemList.push_back(item);
 }
+
 
 void ClothingItem::addNewRating(int rating) {
 	this->averageSatisfactionRating += (double) rating;
