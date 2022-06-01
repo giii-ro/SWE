@@ -42,6 +42,9 @@
     <ClCompile Include="boundary\item\PurchaseItem.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="boundary\item\NewSatisfactionRating.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
@@ -74,6 +77,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="boundary\item\PurchaseItem.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="boundary\item\NewSatisfactionRating.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

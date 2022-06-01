@@ -129,6 +129,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="boundary\item\AddClothingItem.cpp" />
+    <ClCompile Include="boundary\item\NewSatisfactionRating.cpp" />
     <ClCompile Include="boundary\item\PurchaseItem.cpp" />
     <ClCompile Include="boundary\item\QueryPurchaseList.cpp" />
     <ClCompile Include="boundary\item\SearchClothingItem.cpp" />
@@ -144,6 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="boundary\item\AddClothingItem.h" />
+    <ClInclude Include="boundary\item\NewSatisfactionRating.h" />
     <ClInclude Include="boundary\item\PurchaseItem.h" />
     <ClInclude Include="boundary\item\QueryPurchaseList.h" />
     <ClInclude Include="boundary\item\SearchClothingItem.h" />

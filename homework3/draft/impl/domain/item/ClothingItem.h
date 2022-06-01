@@ -21,10 +21,11 @@ class ClothingItem {
 			this->averageSatisfactionRating = 5.5;
 		}
 		void createClothingItem();
-		void addNewRating();
+		void addNewRating(int rating);
 		void decreaseQuantity();
 		string getItemName();
 		vector<string> getSellingItemInfo();
 		vector<string> getPurchaseItemInfo();
+		vector<string> getPurchaseRatingInfo();
 		vector<string> getItemInfo();
 };

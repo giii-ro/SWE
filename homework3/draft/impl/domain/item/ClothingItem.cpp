@@ -4,8 +4,8 @@ void ClothingItem::createClothingItem() {
 
 }
 
-void ClothingItem::addNewRating() {
-
+void ClothingItem::addNewRating(int rating) {
+	this->averageSatisfactionRating += (double) rating;
 }
 
 void ClothingItem::decreaseQuantity() {
@@ -16,6 +16,13 @@ void ClothingItem::decreaseQuantity() {
 
 string ClothingItem::getItemName() {
 	return this->itemName;
+}
+
+/*
+	@return { sellerName, itemName, averageSatisfactionRating }
+*/
+vector<string> ClothingItem::getPurchaseRatingInfo() {
+	return { this->sellerName, this->itemName, to_string(this->averageSatisfactionRating) };
 }
 
 /*
