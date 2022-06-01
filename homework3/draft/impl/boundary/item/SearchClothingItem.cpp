@@ -5,7 +5,7 @@
 using namespace std;
 
 /*
-	@output { sellerName, itemName, companyName, price, quantity, averageSatisfactionRating }
+	@output { sellerName, itemName, companyName, price, quantity, sumSatisfactionRating }
 */ 
 void SearchClothingItem::searchClothingItem() {
 	string searchItemName;

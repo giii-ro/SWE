@@ -10,7 +10,8 @@ class ClothingItem {
 		string companyName;
 		int price;
 		int quantity;
-		double averageSatisfactionRating;
+		double sumSatisfactionRating;
+		int ratingCount;
 	public:
 		ClothingItem(string itemName, string sellerName, string companyName, int price, int quantity) {
 			this->itemName = itemName;
@@ -18,7 +19,8 @@ class ClothingItem {
 			this->companyName = companyName;
 			this->price = price;
 			this->quantity = quantity;
-			this->averageSatisfactionRating = 0;
+			this->sumSatisfactionRating = 0;
+			this->ratingCount = 0;
 		}
 		static void createClothingItem(string itemName, string companyName, int price, int quantity);
 		void addNewRating();
@@ -26,8 +28,9 @@ class ClothingItem {
 		void addNewRating(int rating);
 		void decreaseQuantity();
 		string getItemName();
+		double getAverageSatisfactionRating();
 		vector<string> getSellingItemInfo();
 		vector<string> getPurchaseItemInfo();
-		vector<string> getPurchaseRatingInfo();
+		vector<string> getPurchaseRatingInfo(int rating);
 		vector<string> getItemInfo();
 };

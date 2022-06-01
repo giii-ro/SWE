@@ -11,7 +11,7 @@ void NewSatisfactionRating::addNewRating() {
 	for (int i = 0; i < itemList.size(); i++) {
 		if (itemList[i].getItemName() == currentItemName) {
 			itemList[i].addNewRating(rating);
-			vector<string> purchaseRatingInfo = itemList[i].getPurchaseRatingInfo();
+			vector<string> purchaseRatingInfo = itemList[i].getPurchaseRatingInfo(rating);
 			out << "> " << purchaseRatingInfo[0] << " " << purchaseRatingInfo[1] << " " << purchaseRatingInfo[2] << "\n";
 			return;
 		}

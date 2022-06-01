@@ -19,7 +19,8 @@ void ClothingItem::createClothingItem(string itemName, string companyName, int p
 
 
 void ClothingItem::addNewRating(int rating) {
-	this->averageSatisfactionRating += (double) rating;
+	this->sumSatisfactionRating += (double) rating;
+	this->ratingCount += 1;
 }
 
 void ClothingItem::decreaseQuantity() {
@@ -32,11 +33,21 @@ string ClothingItem::getItemName() {
 	return this->itemName;
 }
 
+double ClothingItem::getAverageSatisfactionRating() {
+	double rating = 0;
+
+	if (this->ratingCount != 0) {
+		rating = this->sumSatisfactionRating / this->ratingCount;
+	}
+
+	return rating;
+}
+
 /*
-	@return { sellerName, itemName, averageSatisfactionRating }
+	@return { sellerName, itemName, currentRating }
 */
-vector<string> ClothingItem::getPurchaseRatingInfo() {
-	return { this->sellerName, this->itemName, to_string(this->averageSatisfactionRating) };
+vector<string> ClothingItem::getPurchaseRatingInfo(int rating) {
+	return { this->sellerName, this->itemName, to_string(rating) };
 }
 
 /*
@@ -57,5 +68,5 @@ vector<string> ClothingItem::getSellingItemInfo() {
 	@return { sellerName, itemName, companyName, price, quantity, averageSatisfactionRating } 
 */
 vector<string> ClothingItem::getItemInfo() {
-	return { this->sellerName, this->itemName, this->companyName, to_string(this->price), to_string(this->quantity), to_string(this->averageSatisfactionRating) };
+	return { this->sellerName, this->itemName, this->companyName, to_string(this->price), to_string(this->quantity), to_string(this->getAverageSatisfactionRating()) };
 }
