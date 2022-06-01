@@ -4,6 +4,7 @@
 #include "boundary/user/SignUp.h"
 #include "boundary/item/ShowClothingItemList.h"
 #include "boundary/item/SearchClothingItem.h"
+#include "boundary/item/QueryPurchaseList.h"
 
 #pragma warning(disable:4996)
 
@@ -73,7 +74,8 @@ void doTask() {
 			}
 			else if (menuCmd2 == 3) {
 				out << "4.3. 상품 구매 내역 조회\n";
-				//QueryPurchaseList::listPurchaseHistory();
+				// TODO : 상품 구매 구현 후, 테스트
+				QueryPurchaseList::getPurchaseHistoryList();
 			}
 			else if (menuCmd2 == 4) {
 				out << "4.4. 상품 구매만족도 평가\n";
@@ -93,4 +95,11 @@ void programExit(int *flag) {
 	in.close();
 	out.close();
 	*flag = 1;
+}
+
+void Test_getPurchaseHistoryList() {
+	currentUserName = "mbc";
+	User user = User::createUser("mbc", "ssn", "id", "pwd");
+	//user.addNewPurchaseHistory(ClothingItem());
+	userList.push_back(user);
 }

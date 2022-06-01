@@ -1,4 +1,4 @@
 class AddClothingItem {
 	public:
-		void addNewClothingItem();
+		static void addNewClothingItem();
 };
