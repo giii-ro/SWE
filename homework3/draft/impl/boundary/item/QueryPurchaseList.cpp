@@ -8,15 +8,12 @@ using namespace std;
 	@output { sellerId, itemName, companyName, price, quantity, sumSatisfactionRating }
 */ 
 void QueryPurchaseList::getPurchaseHistoryList() {
-	for (int i = 0; i < userList.size(); i++) {
-		if (userList[i].getName() == currentUserName) {
-			vector<ClothingItem> itemList = userList[i].getPurchaseClothingItemList();
+	User* user = User::searchUser(currentUserName);
+	vector<ClothingItem*> itemList = user->getPurchaseClothingItemList();
 
-			for (int j = 0; j < itemList.size(); j++) {
-				vector<string> purchaseItemList = itemList[j].getItemInfo();
+	for (int j = 0; j < itemList.size(); j++) {
+		vector<string> purchaseItemList = itemList[j]->getItemInfo();
 
-				out << "> " << purchaseItemList[0] << " " << purchaseItemList[1] << " " << purchaseItemList[2] << " " << purchaseItemList[3] << " " << purchaseItemList[4] << " " << purchaseItemList[5] << "\n\n";
-			}
-		}
+		out << "> " << purchaseItemList[0] << " " << purchaseItemList[1] << " " << purchaseItemList[2] << " " << purchaseItemList[3] << " " << purchaseItemList[4] << " " << purchaseItemList[5] << "\n\n";
 	}
 }

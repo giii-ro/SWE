@@ -18,6 +18,14 @@ void ClothingItem::createClothingItem(string itemName, string companyName, int p
 	}
 }
 
+ClothingItem* ClothingItem::searchClothingItem(string itemName) {
+	for (int i = 0; i < itemList.size(); i++) {
+		if (itemList[i].getItemName() == itemName) {
+			return &itemList[i];
+		}
+	}
+}
+
 
 void ClothingItem::addNewRating(int rating) {
 	this->sumSatisfactionRating += (double) rating;

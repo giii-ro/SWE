@@ -1,10 +1,11 @@
 #include <algorithm>
 #include "User.h"
+#include <iostream>
 
 extern string currentUserName;
 extern vector<User> userList;
 
-void User::addNewPurchaseHistory(ClothingItem item) {
+void User::addNewPurchaseHistory(ClothingItem* item) {
 	this->purchaseItemList.push_back(item);
 }
 
@@ -45,17 +46,25 @@ string User::logoutUser() {
 }
 
 void User::removeUser(string id) {
-	auto it = find(userList.begin(), userList.end(), id);
+	vector<User>::iterator it = find(userList.begin(), userList.end(), id);
 
 	if (it != userList.end()) {
 		userList.erase(it);
 	}
 }
 
+User* User::searchUser(string name) {
+	for (int i = 0; i < userList.size(); i++) {
+		if (userList[i].getName() == name) {
+			return &userList[i];
+		}
+	}
+}
+
 vector<ClothingItem> User::getSellingClothingItemList() {
 	return this->sellingItemList;
 }
-vector<ClothingItem> User::getPurchaseClothingItemList() {
+vector<ClothingItem*> User::getPurchaseClothingItemList() {
 	return this->purchaseItemList;
 }
 

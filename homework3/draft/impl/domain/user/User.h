@@ -12,7 +12,7 @@ class User {
         string id;
         string password;
         vector<ClothingItem> sellingItemList; 
-        vector<ClothingItem> purchaseItemList;
+        vector<ClothingItem*> purchaseItemList;
     public:
         User(string name, string ssn, string id, string password) {
             this->name = name;
@@ -21,12 +21,13 @@ class User {
             this->password = password;
         }
         vector<ClothingItem> getSellingClothingItemList();
-        vector<ClothingItem> getPurchaseClothingItemList();
+        vector<ClothingItem*> getPurchaseClothingItemList();
         static User createUser(string name, string ssn, string id, string password);
         static void removeUser(string id);
+        static User* searchUser(string name);
         static bool loginUser(string id, string password);
         static string logoutUser();
-        void addNewPurchaseHistory(ClothingItem item);
+        void addNewPurchaseHistory(ClothingItem* item);
         void addSellingList(ClothingItem item);
         string getName();
         string getId();
