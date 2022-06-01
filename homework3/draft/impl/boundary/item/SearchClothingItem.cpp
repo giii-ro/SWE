@@ -11,8 +11,8 @@ void SearchClothingItem::searchClothingItem() {
 	string searchItemName;
 	in >> searchItemName;
 
-	ClothingItem item = ClothingItem::searchClothingItem(searchItemName);
-	vector<string> itemInfo = item.getItemInfo();
+	ClothingItem* item = ClothingItem::searchClothingItem(searchItemName);
+	vector<string> itemInfo = item->getItemInfo();
 
 	currentItemName = searchItemName;
 
